@@ -1,7 +1,7 @@
 all:
-	erl -sname 10250 -boot ./math -config ./sys
+	erl -sname 10250 -boot ./dbase -config ./sys
 clean:
-	rm -rf  *~ */*~ */*/*~
+	rm -rf  *~ */*~ */*/*~ *.beam *erl_crash*
 doc_gen:
 	rm -rf  node_config logfiles doc/*;
 	erlc ../doc_gen.erl;
