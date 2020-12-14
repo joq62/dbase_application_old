@@ -1,5 +1,5 @@
 all:
-	erl -sname 10250 -boot ./dbase -config ./sys
+	erl -sname 10250 -boot ./dbase -config ./sys -setcookie abc -detached
 clean:
 	rm -rf  *~ */*~ */*/*~ *.beam *erl_crash*
 doc_gen:
